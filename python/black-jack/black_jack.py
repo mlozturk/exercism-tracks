@@ -17,8 +17,7 @@ def value_of_card(card):
 
     if card == 'A':
         return 1
-    else:
-        return 10 if card in('K','J','Q') else int(card)
+    return 10 if card in('K','J','Q') else int(card)
 
 def higher_card(card_one, card_two):
     """Determine which card has a higher value in the hand.
@@ -36,8 +35,7 @@ def higher_card(card_one, card_two):
 
     if val_card_one == val_card_two:
         return card_one, card_two
-    else:
-        return card_one if val_card_one > val_card_two else card_two
+    return card_one if val_card_one > val_card_two else card_two
 
 
 def value_of_ace(card_one, card_two):
